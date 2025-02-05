@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Breakable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public GameObject explosion; // drag your explosion prefab here
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+void OnCollisionEnter(){
+    Destroy(gameObject); // destroy the grenade
+}
 }
